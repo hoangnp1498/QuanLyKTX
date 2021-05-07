@@ -49,7 +49,7 @@ if (!mysqli_num_rows($selecet_khoa)) {
                     <td class="canhgiuanek12"><input type="button" name="edit" value="Sửa" id="<?php echo $row['idtb']; ?>" class="btn btn-primary btn-xs id_sua_thietbi" /></td>
                     <td class="canhgiuanek12"><input type="button" name="view" value="Chi tiết" id="<?php echo $row['idtb']; ?>" class="btn btn-success btn-xs view_chitietthietbi" /></td>
                     <td class="canhgiua">
-                        <a href="./../admin/quanly_kiemtrathietbi.php?thietbi=<?php echo $row['idtb']; ?>" title="">
+                        <a href="'./Admin/Views/QuanLyThietBi/quanly_kiemtrathietbi.php'?thietbi=<?php echo $row['idtb']; ?>" title="">
                             <input type="button" name="view" value="Phòng" id="" class="btn btn-info btn-xs view_chitietthietbi" />
                         </a>
                     </td>

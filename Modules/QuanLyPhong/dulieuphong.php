@@ -67,7 +67,7 @@ if (!mysqli_num_rows($selecet_phong)) {
                                 <input type="button" name="view" value="Chi  tiết" id="<?php echo $row_phong['idphong']; ?>" class="btn btn-success btn-xs view_chitietphong" />
                             </td>
                             <td class="canhgiuanek12">
-                                <a href="./../admin/quanly_o_phong.php?phongo=<?php echo $row_phong['idphong']; ?>" title="">
+                                <a href="./Admin/Views/QuanLyPhong/quanly_o_phong.php?phongo=<?php echo $row_phong['idphong']; ?>" title="">
                                     <input type="button" name="view" value="Danh sách" id="" class="btn btn-warning btn-xs" />
                                 </a>
                             </td>

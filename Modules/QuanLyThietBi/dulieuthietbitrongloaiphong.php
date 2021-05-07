@@ -75,7 +75,7 @@ if (mysqli_num_rows($query1)) {
                 <td class="canhgiuanek12"><input type="button" name="edit" value="Sửa" id="<?php echo $idcothietbi[$i]; ?>" class="btn btn-primary btn-xs id_sua_thietbitrongloaiphong" /></td>
                 <td class="canhgiuanek12"><input type="button" name="view" value="Chi tiết" id="<?php echo $idcothietbi[$i]; ?>" class="btn btn-success btn-xs view_chitietthietbitrongloaiphong" /></td>
                 <td class="canhgiua">
-                    <a href="./../admin/quanly_kiemtrathietbi.php?thietbiphong=<?php echo $idcothietbi[$i]; ?>" title="">
+                    <a href="'./Admin/Views/QuanLyThietBi/quanly_kiemtrathietbi.php'?thietbiphong=<?php echo $idcothietbi[$i]; ?>" title="">
                         <input type="button" name="view" value="Phòng" id="" class="btn btn-success btn-xs " />
                     </a>
                 </td>

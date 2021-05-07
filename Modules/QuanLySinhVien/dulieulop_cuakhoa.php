@@ -43,7 +43,7 @@ if (!mysqli_num_rows($selecet_lop)) {
                     <td class="canhgiuanek12"><input type="button" name="edit" value="Sửa" id="<?php echo $row_lop['id_lop']; ?>" class="btn btn-primary btn-xs id_sua_lop" /></td>
                     <td class="canhgiuanek12"><input type="button" name="view" value="Chi tiết" id="<?php echo $row_lop['id_lop']; ?>" class="btn btn-success btn-xs view_chitietlop" /></td>
                     <td class="canhgiuanek12">
-                        <a href="./../admin/dssinhviencualop.php?lop=<?php echo $row_lop['id_lop']; ?>" title="">
+                        <a href="./Admin/Views/QuanLySinhVien/danhsachsvlop.php?lop=<?php echo $row_lop['id_lop']; ?>" title="">
                             <input type="button" name="view" value="Danh sách" id="" class="btn btn-success btn-xs " />
                         </a>
                     </td>

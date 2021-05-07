@@ -37,7 +37,7 @@ if (!mysqli_num_rows($selecet_khoa)) {
 
                     <td class="canhgiuanek12"><input type="button" name="view" value="Chi tiết" id="<?php echo $row_khoa['id_khoa']; ?>" class="btn btn-success btn-xs view_chitietkhoa" /></td>
                     <td class="canhgiuanek12">
-                        <a href="dslop_cuakhoa.php?khoa=<?php echo $row_khoa['id_khoa']; ?>" title="">
+                        <a href="./Admin/Views/QuanLySinhVien/dslop_cuakhoa.php?khoa=<?php echo $row_khoa['id_khoa']; ?>" title="">
                             <input type="button" name="view" value="Danh sách" id="" class="btn btn-success btn-xs" /></a>
                     </td>
                     <td class="canhgiuanek12"><input type="button" name="delete" value="Xóa" id="<?php echo $row_khoa['id_khoa']; ?>" class="btn btn-info btn-danger btn-xs xoa_khoa" /></td>

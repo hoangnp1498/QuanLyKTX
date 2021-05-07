@@ -42,11 +42,11 @@ if (!mysqli_num_rows($selecet_chucvu)) {
                     <td class="canhgiuanek12">
                         <input type="button" name="view" value="Chi  tiết" id="<?php echo $row_chucvu['idchucvu']; ?>" class="btn btn-success btn-xs view_chitietchucvu" />
                         <?php if ($row_chucvu['idchucvu'] == 19) { ?>
-                            <a href="./../admin/quanlysinhvien.php" title="">
+                            <a href="./Admin/Views/QuanLySinhVien/quanlysinhvien.php" title="">
                                 <input type="button" name="view" value="Danh sách" id="" class="btn btn-warning btn-xs" />
                             </a>
                         <?php } else { ?>
-                            <a href="./../admin/dscanbocochucvucantim.php?idchucvu=<?php echo $row_chucvu['idchucvu']; ?>" title="">
+                            <a href="./Admin/Views/QuanLyCanBo/dscanbocochucvucantim.php?idchucvu=<?php echo $row_chucvu['idchucvu']; ?>" title="">
                                 <input type="button" name="view" value="Danh sách" id="" class="btn btn-warning btn-xs" />
                             </a>
                         <?php } ?>
