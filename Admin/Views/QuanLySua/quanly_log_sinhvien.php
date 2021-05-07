@@ -1,12 +1,6 @@
 <?php
 include './Modules/Check_login/check_login.php';
-
 //include './../dulieu/kiemtradangnhap.php';
-if (!isset($_GET['idchucvu'])) {
-    header("location:./Admin/login.php");
-} else {
-    $chucvutenn = mysqli_fetch_array(mysqli_query($con, "SELECT * FROM chucvu WHERE chucvu.idchucvu='$_GET[idchucvu]'"));
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +18,6 @@ if (!isset($_GET['idchucvu'])) {
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" />
     <script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
     <link rel="stylesheet" type="text/css" href="../css/ad_css.css">
-    <script type="text/javascript" src="../js/js_quanlycanbocochucvune.js"></script>
     <!-- #endregion -->
 </head>
 
@@ -46,8 +39,8 @@ if (!isset($_GET['idchucvu'])) {
                 <div class="col-xs-12 col-sm-8 col-md-10 col-lg-10 benphai">
                     <div class="container-fluid " style="padding: 0px;">
                         <div class="row">
-                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 chutieude">
-                                <h2>Quản Lý Cán bộ có Chức vụ: <?php echo $chucvutenn['tenchucvu']; ?></h2>
+                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 chutieude">
+                                <h2>Lịch sử thay dữ liệu Sinh viên</h2>
                             </div>
                         </div>
                         <hr class="ngay_ad">
@@ -55,16 +48,13 @@ if (!isset($_GET['idchucvu'])) {
                     <div class="container-fluid  ">
                         <div class="row">
                             <!-- nho doi ten class -->
-                            <div class="dulieu_add_thietbi" id="dulieu_add_thietbi" style="width: 100%; font-size: 14px;">
-                            <?php 
-                            //include './../dulieu/dulieudscanbocochucvunay.php'; ?></div>
-                        </div>
-                    </div><!-- end thaydoi1 -->
-                </div><!-- end noidungthaydoi -->
-            </div> <!-- end col-9 -->
-        </div> <!-- end row noi dung -->
-    </div>
-    <?php include './Admin/foot.php'; ?>
+                            <div class="dulieu_log_edit_lop" style="width: 100%; font-size: 14px;"><?php include './../dulieu/dulieu_log_edit_sinhvien.php'; ?></div>
+                        </div><!-- end thaydoi1 -->
+                    </div><!-- end noidungthaydoi -->
+                </div> <!-- end col-9 -->
+            </div> <!-- end row noi dung -->
+        </div>
+        <?php include './Admin/foot.php'; ?>
     </div> <!-- end trang admin -->
 </body>
 
@@ -74,4 +64,3 @@ if (!isset($_GET['idchucvu'])) {
         $('#myTable').DataTable();
     });
 </script>
-<!-- thêm khoa mới -->

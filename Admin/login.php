@@ -30,6 +30,6 @@ if (isset($_POST['tendangnhap']) && isset($_POST['matkhaudangnhap'])) {
 		echo "2";
 	}
 } else {
-	header('location:../Admin/login.php');
+	header('location:./Admin/login.php');
 }
 ?>

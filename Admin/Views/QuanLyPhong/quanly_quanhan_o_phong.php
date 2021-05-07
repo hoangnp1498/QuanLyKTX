@@ -33,7 +33,7 @@ include './Modules/Check_login/check_login.php';
         </a>
         <div class="container-fluid">
             <div class="row">
-                <?php include 'menu-trai.php'; ?>
+                <?php include './Admin/menu-trai.php'; ?>
                 <div class="col-xs-12 col-sm-8 col-md-10 col-lg-10 benphai">
 
                     <div class="container-fluid">
@@ -70,7 +70,7 @@ include './Modules/Check_login/check_login.php';
         </div>
     </div> <!-- end row noi dung -->
     <br>
-    <?php include 'foot.php'; ?>
+    <?php include './Admin/foot.php'; ?>
     </div> <!-- end trang admin -->
 </body>
 

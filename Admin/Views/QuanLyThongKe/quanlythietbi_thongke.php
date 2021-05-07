@@ -36,7 +36,7 @@ include './Modules/Check_login/check_login.php';
         <br>
         <div class="container-fluid">
             <div class="row">
-                <?php include 'menu-trai.php'; ?>
+                <?php include './Admin/menu-trai.php'; ?>
                 <div class="col-xs-12 col-sm-8 col-md-10 col-lg-10 benphai">
                     <div class="container-fluid " style="padding: 0px;">
                         <div class="row">
@@ -50,7 +50,7 @@ include './Modules/Check_login/check_login.php';
                         <div class="row">
                             <!-- nho doi ten class -->
                             <div class="dulieu_add_thietbi" id="dulieu_add_thietbi" style="width: 100%; font-size: 14px;">
-                            <?php include './Modules/QuanLyThongKe/dulieuthietbi.php';
+                            <?php include './Modules/QuanLyThietBi/dulieuthietbi.php';
                             //'./../dulieu/dulieuthietbi.php'; ?>
                             </div>
                             <div class="col-xs-11 col-sm-12 col-md-2 col-lg-2">
@@ -61,7 +61,7 @@ include './Modules/Check_login/check_login.php';
                 </div> <!-- end col-9 -->
             </div> <!-- end row noi dung -->
         </div>
-        <?php include 'foot.php'; ?>
+        <?php include './Admin/foot.php'; ?>
     </div> <!-- end trang admin -->
 </body>
 

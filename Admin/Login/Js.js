@@ -1,25 +1,27 @@
-$(function () {
+$(function() {
     var cc = $(window).height();
     $('.bg').css({ 'height': cc });
-    $(window).resize(function () {
+    $(window).resize(function() {
         var cc = $(window).height();
         $('.bg').css({ 'height': cc });
     });
 })
-$(document).ready(function () {
-    $('#formdangnhap').on('submit', function (event) {
+
+$(document).ready(function() {
+    $('#formdangnhap').on('submit', function(event) {
         event.preventDefault();
         var tendangnhap = $('#tendangnhap').val();
         var matkhaudangnhap = MD5(MD5(MD5($('#matkhaudangnhap').val())));
         // alert(tendangnhap+'--'+matkhaudangnhap);
         $.ajax({
-            url: './../../dulieu/login.php',
+            url: './Modules/login.php',
+            //url: './../../dulieu/login.php',
             type: 'POST',
             data: {
                 tendangnhap: tendangnhap,
                 matkhaudangnhap: matkhaudangnhap
             },
-            success: function (kqlogin) {
+            success: function(kqlogin) {
                 if (kqlogin == 2) {
                     alert("Tên đăng nhập không đúng");
                     document.getElementById("tendangnhap").focus();
