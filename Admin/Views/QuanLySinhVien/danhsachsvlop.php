@@ -55,10 +55,11 @@ include './Modules/Check_login/check_login.php';
                         <div class="row">
                             <!-- nho doi ten class -->
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <div id="dulieu_dssinhviencualop"><?php include
-                                                                        './Modules/QuanLySinhVien/dulieu_dssinhviencualop.php';
-                                                                    //'./../dulieu/dulieu_dssinhviencualop.php'; 
-                                                                    ?></div>
+                                <div id="dulieu_dssinhviencualop">
+                                    <?php include
+                                        './Modules/QuanLySinhVien/dulieu_dssinhviencualop.php';
+                                    //'./../dulieu/dulieu_dssinhviencualop.php'; 
+                                    ?></div>
                             </div>
                             <div class="col-xs-11 col-sm-12 col-md-2 col-lg-2">
                                 <div class="nuthemmoi"><input type="button" class="btn btn-primary btn-block" name="themsinhvien" value="Thêm mới" data-toggle="modal" data-target="#themsinhvien1"></div>

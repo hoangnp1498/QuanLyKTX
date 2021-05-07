@@ -68,7 +68,7 @@ include './Modules/Check_login/check_login.php';
                 </div> <!-- end col-9 -->
             </div> <!-- end row noi dung -->
         </div>
-        <?php include 'food.php'; ?>
+        <?php include 'foot.php'; ?>
     </div> <!-- end trang admin -->
 </body>
 
