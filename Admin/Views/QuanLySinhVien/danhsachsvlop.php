@@ -1,5 +1,6 @@
 <?php
-include './../dulieu/kiemtradangnhap.php';
+include './Modules/Check_login/check_login.php';
+//include './../dulieu/kiemtradangnhap.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,7 +14,7 @@ include './../dulieu/kiemtradangnhap.php';
     <script type="text/javascript" src="../js/js_quanlysinhvien_cua_lop.js"></script>
 
     <link rel="stylesheet" href="../vendor/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/ad_css.css">
+    <link rel="stylesheet" type="text/css" href="../Css/ad_css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" />
@@ -34,7 +35,7 @@ include './../dulieu/kiemtradangnhap.php';
         <br>
         <div class="container-fluid">
             <div class="row">
-                <?php include 'menu-trai.php'; ?>
+                <?php include 'menu-trai.php' ?>
                 <div class="col-xs-12 col-sm-8 col-md-10 col-lg-10 benphai">
 
                     <div class="container-fluid">
@@ -54,7 +55,10 @@ include './../dulieu/kiemtradangnhap.php';
                         <div class="row">
                             <!-- nho doi ten class -->
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <div id="dulieu_dssinhviencualop"><?php include './../dulieu/dulieu_dssinhviencualop.php'; ?></div>
+                                <div id="dulieu_dssinhviencualop"><?php include
+                                                                        './Modules/QuanLySinhVien/dulieu_dssinhviencualop.php';
+                                                                    //'./../dulieu/dulieu_dssinhviencualop.php'; 
+                                                                    ?></div>
                             </div>
                             <div class="col-xs-11 col-sm-12 col-md-2 col-lg-2">
                                 <div class="nuthemmoi"><input type="button" class="btn btn-primary btn-block" name="themsinhvien" value="Thêm mới" data-toggle="modal" data-target="#themsinhvien1"></div>

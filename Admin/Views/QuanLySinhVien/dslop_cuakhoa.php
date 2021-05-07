@@ -11,9 +11,9 @@ include './Modules/Check_login/check_login.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/jpg" href="./../images/vnkgu.png" />
     <script type="text/javascript" src="../vendor/bootstrap.js"></script>
-    <script type="text/javascript" src="../js/js_quanlylop.js"></script>
+    <script type="text/javascript" src="../js/js_quanlylop_cuakhoa.js"></script>
     <link rel="stylesheet" href="../vendor/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../Css/ad_css.css">
+    <link rel="stylesheet" type="text/css" href="../css/ad_css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" />
@@ -39,7 +39,13 @@ include './Modules/Check_login/check_login.php';
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 chutieude">
-                                <h2>Quản lý Lớp</h2>
+                                <h2>Quản lý Lớp của khoa:
+                                    <p id="chuinthuong">
+                                        <?php
+                                        $slkhoa = mysqli_fetch_array(mysqli_query($con, "SELECT khoa.ten_khoa FROM khoa WHERE id_khoa='$_GET[khoa]'"));
+                                        echo $nam_kt = $slkhoa['ten_khoa']; ?>
+                                    </p>
+                                </h2>
                             </div>
                         </div>
                         <hr class="ngay_ad">
@@ -48,10 +54,11 @@ include './Modules/Check_login/check_login.php';
                         <div class="row">
                             <!-- nho doi ten class -->
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <div id="dulieulop"><?php include
-                                                        './Modules/QuanLySinhVien/dulieulopsv.php';
-                                                    //'./../dulieu/dulieulopsv.php'; 
-                                                    ?></div>
+                                <div id="dulieulop_cuakhoa">
+                                    <?php include
+                                        './Modules/QuanLySinhVien/dulieulop_cuakhoa.php';
+                                    //'./../dulieu/dulieulop_cuakhoa.php';
+                                    ?></div>
                             </div>
                             <div class="col-xs-11 col-sm-12 col-md-2 col-lg-2">
                                 <div class="nuthemmoi"><input type="button" class="btn btn-primary btn-block" name="themlop" value="Thêm mới" data-toggle="modal" data-target="#themlop1"></div>
@@ -61,7 +68,7 @@ include './Modules/Check_login/check_login.php';
                 </div> <!-- end col-9 -->
             </div> <!-- end row noi dung -->
         </div>
-        <?php include 'foot.php'; ?>
+        <?php include 'food.php'; ?>
     </div> <!-- end trang admin -->
 </body>
 
@@ -93,11 +100,10 @@ include './Modules/Check_login/check_login.php';
                     </div>
                     <div class="form-group">
                         <label for="">Khoa</label>
-                        <select id="id_khoa_them_lopt12" name="id_khoa_them_lopt12" class="form-control chuinthuong" required="required">
-                            <option value="">Chọn Khoa</option>
+                        <select id="id_khoa_them_lopt12" name="id_khoa_them_lopt12" class="form-control" required="required">
                             <?php
 
-                            $ssql_ds_khoa = (mysqli_query($con, "SELECT * FROM khoa WHERE khoa.xoa =0 ORDER BY khoa.ten_khoa"));
+                            $ssql_ds_khoa = (mysqli_query($con, "SELECT * FROM khoa WHERE khoa.xoa =0 and id_khoa = '$_GET[khoa]'ORDER BY khoa.ten_khoa"));
                             if (mysqli_num_rows($ssql_ds_khoa)) {
                                 while ($row_dskhoa = mysqli_fetch_array($ssql_ds_khoa)) {
                                     echo "<option value='" . $row_dskhoa['id_khoa'] . "'>$row_dskhoa[ten_khoa]</option>";
@@ -170,7 +176,6 @@ include './Modules/Check_login/check_login.php';
                     <br />
                     <label>Khoa</label>
                     <select id="id_khoa_sua_lopt" name="id_khoa_sua_lopt" class="form-control" required="required">
-                        <option value="" id="khoahienra"></option>
                         <?php
 
                         $ssql_ds_khoa = (mysqli_query($con, "SELECT * FROM khoa WHERE khoa.xoa =0 ORDER BY khoa.ten_khoa"));
@@ -239,6 +244,7 @@ include './Modules/Check_login/check_login.php';
                         </div>
                     </form>
                 </div>
+
             </div>
         </div>
     </div>

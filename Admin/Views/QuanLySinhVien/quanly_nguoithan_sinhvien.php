@@ -14,7 +14,7 @@ include './Modules/Check_login/check_login.php';
     <script type="text/javascript" src="../js/js_quanlysinhvien.js"></script>
 
     <link rel="stylesheet" href="../vendor/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../Css/ad_css.css">
+    <link rel="stylesheet" type="text/css" href="../css/ad_css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" />
@@ -35,12 +35,12 @@ include './Modules/Check_login/check_login.php';
         <br>
         <div class="container-fluid">
             <div class="row">
-                <?php include 'menu-trai.php'; ?>
+                <?php include 'menutrai1.php'; ?>
                 <div class="col-xs-12 col-sm-8 col-md-10 col-lg-10 benphai">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 chutieude">
-                                <h2>Quản lý Sinh viên</h2>
+                                <h2>Quản lý thân nhân sinh viên</h2>
                             </div>
                         </div>
                         <hr class="ngay_ad">
@@ -49,23 +49,21 @@ include './Modules/Check_login/check_login.php';
                         <div class="row">
                             <!-- nho doi ten class -->
                             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                                <div id="dulieusinhvien"><?php
-                                                            include './Modules/QuanLySinhVien/dulieusinhvien.php';
-                                                            //include './../dulieu/dulieusinhvien.php'; 
-                                                            ?></div>
+                                <div id="dulieusinhvien">
+                                    <?php
+                                    include './Modules/QuanLySinhVien/dulieu_nguoithan_sinhvien.php';
+                                    //include './../dulieu/dulieu_nguoithan_sinhvien.php';
+                                    ?></div>
                             </div>
                             <div class="col-xs-11 col-sm-12 col-md-2 col-lg-2">
                                 <div class="nuthemmoi"><input type="button" class="btn btn-primary btn-block" name="themsinhvien" value="Thêm mới" data-toggle="modal" data-target="#themsinhvien1"></div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end thaydoi1 -->
-        </div><!-- end noidungthaydoi -->
-    </div> <!-- end col-9 -->
-    </div> <!-- end row noi dung -->
-    </div>
-    <?php include 'foot.php'; ?>
+                        </div><!-- end thaydoi1 -->
+                    </div><!-- end noidungthaydoi -->
+                </div> <!-- end col-9 -->
+            </div> <!-- end row noi dung -->
+        </div>
+        <?php include 'food.php'; ?>
     </div> <!-- end trang admin -->
 </body>
 
@@ -219,7 +217,7 @@ include './Modules/Check_login/check_login.php';
                     </div>
                     <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 hoten_cb_sua">
                         <label>16./ Lớp (*)</label>
-                        <select name="lop_them_sinh_vien" id="lop_them_sinh_vien" class="form-control chuinhoa" required="required">
+                        <select name="lop_them_sinh_vien" id="lop_them_sinh_vien" class="form-control chuinthuong" required="required">
                             <option value="">Chọn Lớp</option>
                         </select>
                     </div>
@@ -404,13 +402,13 @@ include './Modules/Check_login/check_login.php';
                     </div>
                     <div class="col-xs-12 col-sm-5 col-md-5 col-lg-5 hoten_cb_sua">
                         <label>Lớp</label>
-                        <select name="lop_sua_sinh_vien" id="lop_sua_sinh_vien" class="form-control chuinhoa" required="required">
+                        <select name="lop_sua_sinh_vien" id="lop_sua_sinh_vien" class="form-control chuinthuong" required="required">
                         </select>
                     </div>
 
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 hoten_cb_sua">
                         <label>Họ tên Cha</label>
-                        <input type="text" name="hotencha_sua_sinh_vien" id="hotencha_sua_sinh_vien" class="form-control chuinthuong" rows="1" placeholder="Nhập họ tên cha">
+                        <input type="text" name="hotencha_sua_sinh_vien" id="hotencha_sua_sinh_vien" class="form-control" rows="1" placeholder="Nhập họ tên cha">
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 hoten_cb_sua">
                         <label>SĐT Cha</label>
