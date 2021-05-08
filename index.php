@@ -1,1 +1,1 @@
-<?php include 'Check_login.php';?>
+<?php include 'check_login.php';?>

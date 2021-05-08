@@ -1,6 +1,6 @@
 <?php
-    include './Modules/Check_login/check_login_log.php';
-	//include './../dulieu/kiemtradangnhap_login.php';
+	
+	include './../dulieu/kiemtradangnhap_login.php';
 ?>
 <!DOCTYPE html>
 <html lang="en"><head>
@@ -27,7 +27,7 @@
 		<br>
 		<div class="container-fluid">
 			<div class="row">
-				<?php include 'menu-trai.php'?>
+				<?php include 'menutrai1.php';?>
 				<div class="col-xs-12 col-sm-8 col-md-10 col-lg-10 benphai">
 					<div class="container-fluid" style="padding: 0px;">
 						<div class="row">
@@ -47,8 +47,7 @@
 									<h3 class="canhgiua"  >Cán bộ</h3>
 									<p  >
 										<h3 class="canhgiua ">
-										<?php 
-                                        include './conn.php';
+										<?php include './conn.php';
 										$soluongcanbo = mysqli_fetch_array(mysqli_query($con, "SELECT COUNT(can_bo.id_canbo) AS slcanbo FROM can_bo WHERE can_bo.xoa =0"));
 										echo $soluongcanbo['slcanbo'];
 										?></h3>
@@ -345,7 +344,7 @@
 					</div> <!-- end col-9 -->
 					</div> <!-- end row noi dung -->
 					
-					<?php include 'foot.php'; ?>
+					<?php include 'food.php'; ?>
 				</div>
 			</body>
 		</html>
