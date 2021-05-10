@@ -1,8 +1,8 @@
-.bg{
-    background: linear-gradient(to right, blue, red);
-
+.bg {
+    background: #397ac3;
 }
-.login1{
+
+.login1 {
     font-family: sans-serif;
     position: absolute;
     top: 50%;
@@ -10,21 +10,24 @@
     transform: translate(-50%, -50%);
     padding: 20px;
     width: 400px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(29, 28, 28, 0.8);
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
     border-radius: 10px;
 }
-.login1 legend{
+
+.login1 legend {
     text-align: center;
     margin-top: 50px;
     color: #Fff;
     border-bottom: none;
 }
-.login1 .form-group{
+
+.login1 .form-group {
     position: relative;
 }
-.login1 .form-group input{
+
+.login1 .form-group input {
     padding: 10px 0;
     font-size: 16px;
     color: #fff;
@@ -34,7 +37,8 @@
     background: transparent;
     width: 100%;
 }
-.login1 .form-group label{
+
+.login1 .form-group label {
     position: absolute;
     top: 0;
     left: 0;
@@ -43,19 +47,21 @@
     color: #fff;
     pointer-events: none;
     transition: .5s;
-
 }
-.login1 .form-group input:valid ~ label,
-.login1 .form-group input:focus ~ label{
+
+.login1 .form-group input:valid~label,
+.login1 .form-group input:focus~label {
     top: -18px;
     left: 0px;
     color: #03a9f4;
     font-size: 12px;
 }
-.login1 button{
+
+.login1 button {
     text-align: center;
 }
-.anhbia{
+
+.anhbia {
     width: 100px;
     height: 100px;
     position: absolute;
@@ -65,24 +71,25 @@
     /* border-radius: 50%; */
     /* border: 2px solid #fff; */
 }
+
 @media(max-width: 576px) {
-.login1{
-    font-family: sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    width: 90%;
-    background: rgba(0, 0, 0, 0.8);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
-    border-radius: 10px;
+    .login1 {
+        font-family: sans-serif;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        width: 90%;
+        background: rgba(0, 0, 0, 0.8);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
+        border-radius: 10px;
+    }
 }
-    
-}
-@media only screen and (max-width: 768px) and (min-width:576px){
-    .login1{
+
+@media only screen and (max-width: 768px) and (min-width:576px) {
+    .login1 {
         font-family: sans-serif;
         position: absolute;
         top: 30%;
@@ -95,5 +102,4 @@
         box-shadow: 0 15px 25px rgba(0, 0, 0, .5);
         border-radius: 10px;
     }
-    
 }

@@ -2,7 +2,7 @@
 $HOST = "localhost";
 $USER = "root";
 $PASS = "";
-$DB = "kl_qlktx";
+$DB = "kl_qlktx1";
 $ERROR1 = "Loi mysql";
 $ERROR2 = "Loi DB";
 $con = mysqli_connect($HOST, $USER, $PASS) or die($ERROR1);

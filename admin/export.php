@@ -51,7 +51,3 @@ include './../dulieu/conn.php';
 	header('Pragma: no-cache');  
 	readfile($filename);  
 	return;
-
-
-
-?>

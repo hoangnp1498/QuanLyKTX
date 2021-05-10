@@ -8,7 +8,7 @@ include './../dulieu/kiemtradangnhap.php';
 	<title> Hệ thống KTX Đại học Vinh </title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" type="image/jpg" href="./../images/vnkgu.png" />
+	<link rel="shortcut icon" type="image/jpg" href="./../images/TDV.png" />
 	<script type="text/javascript" src="../vendor/bootstrap.js"></script>
 	<script type="text/javascript" src="../js/js_quanlysinhvien.js"></script>
 
@@ -26,7 +26,7 @@ include './../dulieu/kiemtradangnhap.php';
 			<div class="container-fluid">
 				<div class="row anhbia  text-center">
 					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-						<img class="img-responsive" src="../images/anhbia.PNG" alt="">
+						<img class="img-responsive" src="../images/brand.PNG" alt="">
 					</div>
 				</div>
 			</div>
@@ -61,7 +61,7 @@ include './../dulieu/kiemtradangnhap.php';
 	</div> <!-- end col-9 -->
 	</div> <!-- end row noi dung -->
 	</div>
-	<?php include 'food.php'; ?>
+	<?php include 'foot.php'; ?>
 	</div> <!-- end trang admin -->
 </body>
 

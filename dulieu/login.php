@@ -40,7 +40,6 @@ if (isset($_POST['tendangnhap']) && isset($_POST['matkhaudangnhap'])) {
 					$_SESSION['id_cochucvulogin'] = $row['id_cochucvu'];
 					$_SESSION['id_canbo'] = $row['id_canbo'];
 					$_SESSION['kt_dangnhap_cb'] = 1;
-
 					echo "0";
 				} else {
 					echo "3";

@@ -22,7 +22,6 @@ if (isset($_POST['tendangnhap']) && isset($_POST['matkhaudangnhap'])) {
 			} else {
 				echo "3";
 			}
-
 		} else {
 			echo "1";
 		}
@@ -32,4 +31,3 @@ if (isset($_POST['tendangnhap']) && isset($_POST['matkhaudangnhap'])) {
 } else {
 	header('location:../admin/login.php');
 }
-?>

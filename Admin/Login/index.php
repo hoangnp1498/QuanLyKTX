@@ -3,7 +3,7 @@
     <title>Login</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" type="image/jpg" href="./../../images/vnkgu.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="./../../images/TDV.png"/>
     <script type="text/javascript" src="vendor/bootstrap.js"></script>
     <script type="text/javascript" src="./../../js/js_md5.js"></script>
     <script type="text/javascript" src="1.js"></script>
@@ -21,7 +21,7 @@
         <div class="row text-right">
             <div class="login1">
                 <div class="anhbia">
-                    <img src="images/vnkgu.png" class="img-responsive" alt="Image">
+                    <img src="images/TDV.png" class="img-responsive" alt="Image">
                 </div>
                 <form action="index.php" method="POST" role="form" id="formdangnhap">
                     <legend >Đăng nhập</legend>
